@@ -1,0 +1,70 @@
+body{
+    background-image: url("spor.jpg");
+    background-position: 100%;
+}
+#gemes{
+
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border-bottom: 3px solid #ffd500;
+
+
+     background-image: url("pustiny.jpg");
+    animation: trip 20s linear infinite;
+}
+@keyframes trip {
+     0% {
+         background-position-x: 0;
+     }
+     100% {
+         background-position-x: -600px;
+     }
+ }
+#dinoz{
+    width: 50px;
+    height: 50px;
+    background-image: url("dinozavr.png");
+    background-size: 100%;
+    position: relative;
+    top: 350px;
+}
+#kaktus{
+     width: 50px;
+    height: 50px;
+    background-image: url("kakt.png");
+    background-size: 100%;
+    position: relative;
+    top: 300px;
+    left: 550px;
+    animation: kaktus 3s infinite linear;
+}
+#ptero{
+    width: 50px;
+    height: 50px;
+    background-image: url("trte.png");
+    background-size: 100%;
+    position: relative;
+     top: 50px;
+    left: 550px;
+     animation: ptero 8.5s infinite linear;
+}
+.jump{
+ animation: dinozjump 1.2s linear;
+}
+@keyframes kaktus {
+    from{left: 550px}
+    to{left: 0}
+}
+
+@keyframes dinozjump {
+   0%{top: 350px}
+    25%{top: 100px}
+    50%{top: 200px}
+    75%{top: 300px}
+    100%{top: 350px}
+}
+@keyframes ptero {
+    from { left: 550px}
+    to {left: 0}
+}
