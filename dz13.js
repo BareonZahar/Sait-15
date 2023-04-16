@@ -38,12 +38,4 @@ setInterval(f2,10)
      }
 
  }
-  let bg_offset = 0;
-  let bg_object = document.body;
-  function scroll_bg(Size){
-      bg_offset++;
-      if (bg_offset>Size) bg_offset = 0;
-      bg_object.style.backgroundPosition = bg_offset + "px0";
-  }
-  let Timer = window.setInterval("scroll_bg(150)", 50);
  setInterval(f3,10)
